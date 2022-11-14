@@ -4,9 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
+import "primereact/resources/themes/mdc-dark-deeppurple/theme.css";  //theme
 import "primereact/resources/primereact.min.css";                  //core css
 import "primeicons/primeicons.css";                                //icons
+
+import '/node_modules/primeflex/primeflex.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

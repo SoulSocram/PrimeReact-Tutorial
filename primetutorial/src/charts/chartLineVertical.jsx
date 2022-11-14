@@ -1,9 +1,68 @@
 import React, {  useState  } from "react";
 
 import {  Chart  } from 'primereact/chart';
-import {  darkTheme, whiteTheme  } from './chartStyles';
 
 const ChartLineVertical = () => {
+
+    const darkTheme = {
+        maintainAspectRatio: false,
+        aspectRatio: .6,
+        plugins: {
+            legend: {
+                labels: {
+                    color: '#e3f2fd',
+                }
+            }
+        },
+        scales: {
+            x: {
+                ticks: {
+                    color: '#e3f2fd'
+                },
+                grid: {
+                    color: '#343e4d'
+                }
+            },
+            y: {
+                ticks: {
+                    color: '#e3f2fd'
+                },
+                grid: {
+                    color: '#343e4d'
+                }
+            }
+        }
+    };
+    
+    const whiteTheme = {
+        aintainAspectRatio: false,
+        aspectRatio: .6,
+        plugins: {
+            legend: {
+                labels: {
+                    color: '#e3f2fd',
+                }
+            }
+        },
+        scales: {
+            x: {
+                ticks: {
+                    color: '#e3f2fd'
+                },
+                grid: {
+                    color: '#121212'
+                }
+            },
+            y: {
+                ticks: {
+                    color: '#e3f2fd'
+                },
+                grid: {
+                    color: '#121212'
+                }
+            }
+        }
+    }    
 
     let color = darkTheme;
 
